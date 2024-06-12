@@ -1,16 +1,132 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
 
 body {
   min-height: 100vh;
   font-family: "Outfit", "sans-serif";
   display: grid;
+  background-color: var(--eggshell);
   place-content: center;
+}
+#container {
+  background-color: #fff;
+  padding: 10px 10px;
+
+  display: grid;
 }
 img {
   max-width: 100%;
   display: block;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: "Young Serif";
+  font-size: 6vh;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: var(--dark-charcoal);
+  background-color: #fff;
+}
+
+#para {
+  font-family: "Outfit";
+  font-size: 16px;
+  padding: 10px 0;
+  background-color: #fff;
+  color: var(--wenge-brown);
+  margin-bottom: 2rem;
+}
+
+#prep_div {
+  background-color: var(--rose-white);
+  padding: 1vw 1vw;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  margin: 0 20px;
+}
+#prep_div h2 {
+  color: var(--dark-raspberry);
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+#prep_div li {
+  padding: 0 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: var(--dark-charcoal);
+}
+#prep_div li span {
+  color: var(--wenge-brown);
+  font-weight: bold;
+}
+
+#ingr_div h2 {
+  color: var(--dark-raspberry);
+  padding: 0 10px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+#ingr_div li {
+  padding: 5px 20px;
+  font-weight: 400;
+  color: rgb(119, 114, 114);
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#instr_div {
+  margin-top: 5px;
+}
+#instr_div h2 {
+  color: var(--dark-raspberry);
+  padding: 0 10px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+#instr_div #instr_steps {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#instr_steps #num {
+  padding-left: 20px;
+  margin-right: 15px;
+  color: var(--dark-raspberry);
+  font-weight: 600;
+}
+#instr_steps p {
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+#instr_steps p span {
+  font-weight: 600;
+  font-family: "Outfit";
+  color: rgb(119, 112, 112);
 }
